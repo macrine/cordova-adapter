@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CordovaLib/CordovaLib.iml" filepath="$PROJECT_DIR$/CordovaLib/CordovaLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/cordova-adapter/cordova-adapter.iml" filepath="$PROJECT_DIR$/cordova-adapter/cordova-adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/hellolib.iml" filepath="$PROJECT_DIR$/hellolib.iml" />
