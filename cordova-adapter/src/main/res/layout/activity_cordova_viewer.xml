@@ -6,11 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.guanhuai365.cordova_adapter.CordovaViewerActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="268dp" />
+    <org.apache.cordova.engine.SystemWebView
+        android:id="@+id/tutorialView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </android.support.constraint.ConstraintLayout>
