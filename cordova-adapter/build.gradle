@@ -4,12 +4,6 @@ apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.macrine'
 
 android {
-    sourceSets {
-        main {
-            jniLibs.srcDirs = ['libs']
-        }
-    }
-
     compileSdkVersion 26
 
 
