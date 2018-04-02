@@ -29,9 +29,15 @@ minSdkVersion:19
 4.在java代码中调用:  
 ```
 Intent intent=new Intent(MainActivity.this,CordovaViewerActivity.class);
-intent.putExtra("url","https://***");
+intent.putExtra("url","https://url);
 startActivity(intent);
 ```
 
 MainActivity是当前的Activity
-https://***是第3步得到的url
+https://url 是第3步得到的url
+
+
+## 支持的cordova插件  
+>1.Device,cordova-plugin-device  
+>2.cordova-plugin-ionic-keyboard  
+>3.cordova-plugin-camera
