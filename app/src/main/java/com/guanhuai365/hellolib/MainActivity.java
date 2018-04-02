@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,CordovaViewerActivity.class);
+//                intent.putExtra("url","https://www.guanhuai365.com/testapp/tmp_embed_test");
                 startActivity(intent);
             }
         });

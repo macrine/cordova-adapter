@@ -1,5 +1,6 @@
 package com.guanhuai365.cordova_adapter;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -18,8 +19,16 @@ public class CordovaViewerActivity extends CordovaActivity {
             moveTaskToBack(true);
         }
 
+        Intent intent = getIntent();
+        String url = intent.getStringExtra("url");
+        if(url==null){
+            loadUrl(launchUrl);
+        } else {
+            loadUrl(url);
+        }
+
         // Set by <content src="index.html" /> in config.xml
-        loadUrl(launchUrl);
-//        loadUrl("https://www.guanhuai365.com/testapp/shangu_180319/");
+//        loadUrl(launchUrl);
+//        loadUrl("https://www.guanhuai365.com/testapp/tmp_embed_test");
     }
 }
