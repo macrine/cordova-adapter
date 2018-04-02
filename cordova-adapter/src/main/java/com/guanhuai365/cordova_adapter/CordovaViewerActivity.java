@@ -3,11 +3,23 @@ package com.guanhuai365.cordova_adapter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class CordovaViewerActivity extends AppCompatActivity {
+import org.apache.cordova.CordovaActivity;
+
+public class CordovaViewerActivity extends CordovaActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cordova_viewer);
+//        setContentView(R.layout.activity_cordova_viewer);
+
+        // enable Cordova apps to be started in the background
+        Bundle extras = getIntent().getExtras();
+        if (extras != null && extras.getBoolean("cdvStartInBackground", false)) {
+            moveTaskToBack(true);
+        }
+
+        // Set by <content src="index.html" /> in config.xml
+        loadUrl(launchUrl);
+//        loadUrl("https://www.guanhuai365.com/testapp/shangu_180319/");
     }
 }
